@@ -3,18 +3,205 @@
 {% block title %}Hello TeamController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Stagiaire/Desktop/burberkingsf/burgerkingsf/src/Controller/TeamController.php'|file_link(0) }}">src/Controller/TeamController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Stagiaire/Desktop/burberkingsf/burgerkingsf/templates/team/index.html.twig'|file_link(0) }}">templates/team/index.html.twig</a></code></li>
-    </ul>
+<body>
+<!-- Nav Bar Start -->
+<div class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+        <a href="{{ asset('') }}index.html" class="navbar-brand">Burger <span>King</span></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="{{ asset('accueil') }}" class="nav-item nav-link">Home</a>
+                <a href="{{ asset('about') }}" class="nav-item nav-link">About</a>
+                <a href="{{ asset('feature') }}" class="nav-item nav-link">Feature</a>
+                <a href="{{ asset('team') }}" class="nav-item nav-link active">Chef</a>
+                <a href="{{ asset('menu') }}" class="nav-item nav-link">Menu</a>
+                <a href="{{ asset('booking') }}" class="nav-item nav-link">Booking</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu">
+                        <a href="{{ asset('blog') }}" class="dropdown-item">Blog Grid</a>
+                        <a href="{{ asset('single') }}" class="dropdown-item">Blog Detail</a>
+                    </div>
+                </div>
+                <a href="{{ asset('contact') }}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- Nav Bar End -->
+
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Master Chef</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">Chef</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Team Start -->
+<div class="team">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Our Team</p>
+            <h2>Our Master Chef</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('assets/img/team-1.jpg') }}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Adam Phillips</h2>
+                        <p>CEO, Co Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('assets/img/team-2.jpg') }}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Dylan Adams</h2>
+                        <p>Master Chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('assets/img/team-3.jpg') }}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Jhon Doe</h2>
+                        <p>Master Chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('assets/img/team-4.jpg') }}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Josh Dunn</h2>
+                        <p>Master Chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('assets/img/team-1.jpg') }}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Adam Phillips</h2>
+                        <p>CEO, Co Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('assets/img/team-2.jpg') }}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Dylan Adams</h2>
+                        <p>Master Chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('assets/img/team-3.jpg') }}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Jhon Doe</h2>
+                        <p>Master Chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('assets/img/team-4.jpg') }}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Josh Dunn</h2>
+                        <p>Master Chef</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+
 {% endblock %}
