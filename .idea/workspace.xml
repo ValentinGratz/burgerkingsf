@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84c9d3c8-f367-43eb-a5df-8927d43d4d16" name="Default Changelist" comment="" />
+    <list default="true" id="84c9d3c8-f367-43eb-a5df-8927d43d4d16" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/migrations/Version20201216133223.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <element signature="e#64#96#0#PHP" expanded="true" />
               </folding>
@@ -190,12 +192,18 @@
             <path>
               <item name="burgerkingsf" type="b2602c69:ProjectViewProjectNode" />
               <item name="burgerkingsf" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="burgerkingsf" type="b2602c69:ProjectViewProjectNode" />
               <item name="burgerkingsf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="burgerkingsf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="burgerkingsf" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -242,12 +250,12 @@
       <workItem from="1608016457321" duration="1471000" />
       <workItem from="1608019832189" duration="254000" />
       <workItem from="1608023506892" duration="10026000" />
-      <workItem from="1608103570376" duration="8312000" />
+      <workItem from="1608103570376" duration="10726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25502000" />
+    <option name="totallyTimeSpent" value="27916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -484,10 +492,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/migrations/Version20201216133223.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="e#64#96#0#PHP" expanded="true" />
           </folding>
