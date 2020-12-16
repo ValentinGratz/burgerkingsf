@@ -17,10 +17,6 @@ class Chef
      */
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $Chef;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -30,24 +26,14 @@ class Chef
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $Prénom;
+    private $Prenom;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getChef(): ?string
-    {
-        return $this->Chef;
-    }
 
-    public function setChef(string $Chef): self
-    {
-        $this->Chef = $Chef;
-
-        return $this;
-    }
 
     public function getNom(): ?string
     {
@@ -61,14 +47,14 @@ class Chef
         return $this;
     }
 
-    public function getPrénom(): ?string
+    public function getPrenom(): ?string
     {
-        return $this->Prénom;
+        return $this->Prenom;
     }
 
-    public function setPrénom(string $Prénom): self
+    public function setPrenom(string $Prenom): self
     {
-        $this->Prénom = $Prénom;
+        $this->Prenom = $Prenom;
 
         return $this;
     }
